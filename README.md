@@ -1,3 +1,2 @@
 # bash-ingestion
-BASH scripts used for ingestion
-
+BASH scripts used for ingestion of UFrame data.
