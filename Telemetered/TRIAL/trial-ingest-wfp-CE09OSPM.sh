@@ -21,7 +21,7 @@ EDEXLOGDIR=/home/developer/uframes/ooi/uframe-1.0/edex/logs
 EDEXLOGFILES=$(ls $EDEXLOGDIR/edex-ooi*.log)
 
 date
-echo "starting ingest-wfp-CE09OSPM.sh"
+echo "starting new-ingest-wfp-CE09OSPM.sh"
 
 #files of the type
 # MCI_DAT_a=/omc_data/whoi/OMC/CE09OSPM/D00002/imm/adcpt/adcpt_*_*.DAT   
@@ -33,13 +33,13 @@ MCI_DAT_E=/omc_data/whoi/OMC/CE09OSPM/D00002/imm/mmp/E*.DAT
 MCI_txt=/omc_data/whoi/OMC/CE09OSPM/D00002/irid2shore/stc_status.*_*.txt
 
 
-# MCI_DAT_a_files=$(find $MCI_DAT_a -mmin -15 -print)
-MCI_DEC_A_files=$(find $MCI_DEC_A  -print)
-MCI_DAT_C_files=$(find $MCI_DAT_C  -print)
-MCI_DAT_E_files=$(find $MCI_DAT_E  -print)
+# MCI_DAT_a_files=$(ls $MCI_DAT_a -mmin -15|head -250 )
+MCI_DEC_A_files=$(ls $MCI_DEC_A |head -250 )
+MCI_DAT_C_files=$(ls $MCI_DAT_C |head -250 )
+MCI_DAT_E_files=$(ls $MCI_DAT_E |head -250 )
 
-#MCI_log_files=$(find $MCI_log  -print)
-MCI_txt_files=$(find $MCI_txt  -print)
+#MCI_log_files=$(ls $MCI_log |head -250 )
+MCI_txt_files=$(ls $MCI_txt |head -250 )
 
 
 
@@ -111,5 +111,5 @@ do
 done
 
 date
-echo "ended ingest-wfp-CE09OSPM.sh"
+echo "ended new-ingest-wfp-CE09OSPM.sh"
 

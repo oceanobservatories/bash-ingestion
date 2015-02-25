@@ -70,7 +70,7 @@ GL319=/omc_data/whoi/OMC/CE05MOAS-GL319/R00001/merged/ce_319_*.mrg
 #
 GL320=/omc_data/whoi/OMC/CE05MOAS-GL320/R00001/merged/ce_320_*.mrg
 #
-#GL381=/omc_data/whoi/OMC/CE05MOAS-GL381/R00001/merged/ce_381_*.mrg
+GL381=/omc_data/whoi/OMC/CE05MOAS-GL381/R00001/merged/ce_381_*.mrg
 #
 #GL382=/omc_data/whoi/OMC/CE05MOAS-GL382/R00001/merged/ce_382_*.mrg
 #
@@ -87,7 +87,7 @@ GL319_files=$(find $GL319  -print)
 #
 GL320_files=$(find $GL320  -print)
 #
-#GL381_files=$(find $GL381  -print)
+GL381_files=$(find $GL381  -print)
 #
 #GL382_files=$(find $GL382  -print)
 #
@@ -199,27 +199,27 @@ done
 
 #G381:
 #define Glider Reference Desingnator:
-#declare -x GL1REFDES=(CE05MOAS-GL381-00-ENG000000
-#                      CE05MOAS-GL381-01-PARADM000
-#                      CE05MOAS-GL381-02-FLORTM000
-#                      CE05MOAS-GL381-04-DOSTAM000
-#                      CE05MOAS-GL381-05-CTDGVM000)
-#
-#for file in $GL381_files
-#do
-#    if  grep --quiet $file $EDEXLOGFILES; then
-#        echo "move on" > /dev/null
-#    else
-#        ls -l $file
-#        for i in {0..4}
-#        do
-#            echo "$INGS ${UFR[i]} $file ${GL1REFDES[i]} recovered"
-##                  $INGS ${UFR[i]} $file ${GL1REFDES[i]} recovered
-#        done
-#        sleep 3
-#    fi
-#
-#done
+declare -x GL1REFDES=(CE05MOAS-GL381-00-ENG000000
+                      CE05MOAS-GL381-01-PARADM000
+                      CE05MOAS-GL381-02-FLORTM000
+                      CE05MOAS-GL381-04-DOSTAM000
+                      CE05MOAS-GL381-05-CTDGVM000)
+
+for file in $GL381_files
+do
+    if  grep --quiet $file $EDEXLOGFILES; then
+        echo "move on" > /dev/null
+    else
+        ls -l $file
+        for i in {0..4}
+        do
+            echo "$INGS ${UFR[i]} $file ${GL1REFDES[i]} recovered"
+                  $INGS ${UFR[i]} $file ${GL1REFDES[i]} recovered
+        done
+        sleep 3
+    fi
+
+done
 
 ##G382:
 ##define Glider Reference Desingnator:

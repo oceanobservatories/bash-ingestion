@@ -32,14 +32,14 @@ MCI_DAT_E=/omc_data/whoi/OMC/CE09OSPM/R00001/instrmts/CWFP_sn12991-03/E*.DAT
 MCI_txt=/omc_data/whoi/OMC/CE09OSPM/R00001/cg_data/irid2shore/stc_status.*_*.txt
 
 
-MCI_DAT_A_files=$(find $MCI_DAT_A -print)
-MCI_DAT_C_files=$(find $MCI_DAT_C -print)
-MCI_DAT_E_files=$(find $MCI_DAT_E -print)
+MCI_DAT_A_files=$(ls $MCI_DAT_A|head -250 )
+MCI_DAT_C_files=$(ls $MCI_DAT_C|head -250 )
+MCI_DAT_E_files=$(ls $MCI_DAT_E|head -250 )
 
-#MCI_00_files=$(find $MCI_00 -print)
-#MCI_3d_files=$(find $MCI_3d -print)
-#MCI_rte_files=$(find $MCI_rte -print)
-MCI_txt_files=$(find $MCI_txt -print)
+#MCI_00_files=$(ls $MCI_00|head -250 )
+#MCI_3d_files=$(ls $MCI_3d|head -250 )
+#MCI_rte_files=$(ls $MCI_rte|head -250 )
+MCI_txt_files=$(ls $MCI_txt|head -250 )
 
 
 

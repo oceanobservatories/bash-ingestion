@@ -21,7 +21,7 @@ EDEXLOGDIR=/home/developer/uframes/ooi/uframe-1.0/edex/logs
 EDEXLOGFILES=$(ls $EDEXLOGDIR/edex-ooi*.log)
 
 date
-echo "starting new-ingest-wfp-CE09OSPM.sh"
+echo "starting ingest-wfp-CE09OSPM.sh"
 
 #files of the type
 # MCI_DAT_a=/omc_data/whoi/OMC/CE09OSPM/D00002/imm/adcpt/adcpt_*_*.DAT   
@@ -111,5 +111,5 @@ do
 done
 
 date
-echo "ended new-ingest-wfp-CE09OSPM.sh"
+echo "ended ingest-wfp-CE09OSPM.sh"
 
