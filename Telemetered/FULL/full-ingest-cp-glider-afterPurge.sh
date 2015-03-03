@@ -87,18 +87,22 @@ declare -x UFR=(Ingest.glider-eng-glider_telemetered
 #    else
 #        ls -l $g1d2
 #        for i in {0..4}
-##        do
+#        do
 #            echo "$INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} telemetered" 
 #            $INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} telemetered
 #        done
+#        sleep 3 
 #    fi
-##    sleep 3
+##    
 #done
     # echo $INGS Ingest.glider-eng-glider_telemetered $g1d2 CP05MOAS-GL001-00-ENG000000 telemetered
     # echo $INGS Ingest.parad-m-glider_telemetered $g1d2 CP05MOAS-GL001-05-PARADM000 telemetered
     # echo $INGS Ingest.flort-m-glider_telemetered $g1d2 CP05MOAS-GL001-02-FLORTM000 telemetered
     # echo $INGS Ingest.dosta-abcdjm-glider_telemetered $g1d2 CP05MOAS-GL001-04-DOSTAM000 telemetered
     # echo $INGS Ingest.ctdgv-m-glider_telemetered $g1d2 CP05MOAS-GL001-03-CTDGVM000 telemetered
+
+# grep $(find /omc_data/whoi/OMC/CP05MOAS-GL002/D00002/merged-from-glider/cp_340_*.mrg) $(ls /home/developer/uframes/ooi/uframe-1.0/edex/logs/edex-ooi*.log)
+# grep $(find /omc_data/whoi/OMC/CP05MOAS-GL004/D00001/merged-from-glider/cp_380_*.mrg) $(ls /home/developer/uframes/ooi/uframe-1.0/edex/logs/edex-ooi*.log)
 
 declare -x GL2REFDES=(CP05MOAS-GL002-00-ENG000000 
                       CP05MOAS-GL002-05-PARADM000
@@ -117,8 +121,9 @@ do
             echo "$INGS ${UFR[i]} $g2d2 ${GL2REFDES[i]} telemetered" 
             $INGS ${UFR[i]} $g2d2 ${GL2REFDES[i]} telemetered
         done
+        sleep 3 
     fi
-    sleep 3
+    
 done
     # echo $INGS Ingest.glider-eng-glider_telemetered $g2d2 CP05MOAS-GL002-00-ENG000000 telemetered
     # echo $INGS Ingest.parad-m-glider_telemetered $g2d2 CP05MOAS-GL002-05-PARADM000 telemetered
@@ -143,8 +148,9 @@ done
 #            echo "$INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} telemetered" 
 #        $INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} telemetered
 #        done
+#        sleep 3 
 #    fi
-#    sleep 3
+#    
 #done
     # echo $INGS Ingest.glider-eng-glider_telemetered $g3d2 CP05MOAS-GL003-00-ENG000000 telemetered
     # echo $INGS Ingest.parad-m-glider_telemetered $g3d2 CP05MOAS-GL003-05-PARADM000 telemetered
@@ -169,8 +175,9 @@ do
             echo "$INGS ${UFR[i]} $g4d1 ${GL4REFDES[i]} telemetered" 
         $INGS ${UFR[i]} $g4d1 ${GL4REFDES[i]} telemetered
         done
+        sleep 3 
     fi
-    sleep 3
+    
 done
     # echo $INGS Ingest.glider-eng-glider_telemetered $g4d1 CP05MOAS-GL004-00-ENG000000 telemetered
     # echo $INGS Ingest.parad-m-glider_telemetered $g4d1 CP05MOAS-GL004-05-PARADM000 telemetered
@@ -195,8 +202,9 @@ done
 #            echo "$INGS ${UFR[i]} $g5d1 ${GL5REFDES[i]} telemetered" 
 #            $INGS ${UFR[i]} $g5d1 ${GL5REFDES[i]} telemetered
 #        done
+#        sleep 3 
 #    fi
-#    sleep 3
+#    
 #done
     # echo $INGS Ingest.glider-eng-glider_telemetered $g5d1 CP05MOAS-GL005-00-ENG000000 telemetered
     # echo $INGS Ingest.parad-m-glider_telemetered $g5d1 CP05MOAS-GL005-05-PARADM000 telemetered
@@ -205,4 +213,4 @@ done
     # echo $INGS Ingest.ctdgv-m-glider_telemetered $g5d1 CP05MOAS-GL005-03-CTDGVM000 telemetered
 
 date 
-echo "ended new-ingest-cp-glider.sh" 
+echo "ended ingest-cp-glider-afterPurge.sh" 

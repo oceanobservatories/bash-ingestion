@@ -83,8 +83,9 @@ do
             echo "$INGS ${UFR[i]} $file ${GL1REFDES[i]} recovered" 
             $INGS ${UFR[i]} $file ${GL1REFDES[i]} recovered
         done
+        sleep 3 
     fi
-    sleep 3
+    
 done
 
 ######################## glider no.2 #################################
@@ -106,8 +107,9 @@ do
             echo "$INGS ${UFR[i]} $file ${GL2REFDES[i]} recovered" 
             $INGS ${UFR[i]} $file ${GL2REFDES[i]} recovered
         done
+        sleep 3 
     fi
-    sleep 3
+    
 done
 
 
@@ -129,8 +131,9 @@ do
             echo "$INGS ${UFR[i]} $file ${GL3REFDES[i]} recovered" 
         $INGS ${UFR[i]} $file ${GL3REFDES[i]} recovered
         done
+        sleep 3 
     fi
-    sleep 3
+    
 done
 
 ######################## for 3 PD0 files #############################
@@ -142,8 +145,9 @@ do
         ls -l  $file
             echo "$INGS Ingest.adcpa-m-glider_recovered $file CP05MOAS-GL001-01-ADCPAM000 recovered"
         $INGS Ingest.adcpa-m-glider_recovered $file CP05MOAS-GL001-01-ADCPAM000 recovered
+        sleep 3 
     fi
-    sleep 3
+    
 done
 
 
@@ -155,8 +159,9 @@ do
         ls -l  $file
             echo "$INGS Ingest.adcpa-m-glider_recovered $file CP05MOAS-GL002-01-ADCPAM000 recovered"
         $INGS Ingest.adcpa-m-glider_recovered $file CP05MOAS-GL002-01-ADCPAM000 recovered
+        sleep 3 
     fi
-    sleep 3
+    
 done
 
 for file in $GL3Rv_files
@@ -167,8 +172,9 @@ do
         ls -l  $file
             echo "$INGS Ingest.adcpa-m-glider_recovered $file CP05MOAS-GL003-01-ADCPAM000 recovered"
         $INGS Ingest.adcpa-m-glider_recovered $file CP05MOAS-GL003-01-ADCPAM000 recovered
+        sleep 3 
     fi
-    sleep 3
+    
 done
 
 date 

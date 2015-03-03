@@ -73,6 +73,7 @@ do
             echo "$INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} recovered"
                   $INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} recovered
         done
+         
         sleep 3 
     fi
     
@@ -101,6 +102,7 @@ do
            echo "$INGS ${UFR[i]} $g2d2 ${GL2REFDES[i]} recovered" 
                  $INGS ${UFR[i]} $g2d2 ${GL2REFDES[i]} recovered
        done
+         
         sleep 3 
     fi
     
@@ -128,6 +130,7 @@ do
             echo "$INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} recovered" 
                   $INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} recovered
         done
+         
         sleep 3 
     fi
     
