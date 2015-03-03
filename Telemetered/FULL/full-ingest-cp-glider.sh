@@ -165,7 +165,7 @@ declare -x GL4REFDES=(CP05MOAS-GL004-00-ENG000000
 
 for g4d1 in $GL4D1_files
 do
-    if  grep --quiet $g4d2 $EDEXLOGFILES; then
+    if  grep --quiet $g4d1 $EDEXLOGFILES; then
 	echo "move on" > /dev/null
     else
         ls -l $g4d1
