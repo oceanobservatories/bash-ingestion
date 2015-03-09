@@ -86,16 +86,18 @@ do
 done
 
 ################################################  unknown  ##############################################
-
-
-
-
-
-
-
-
-
-
+#Ingest.ctdmo-ghqr_recovered        /omc_data/whoi/OMC/GP03FLMA/R00001/mc/SBE37*.hex       GP03FLMA-xxxxx-03-CTDMOx000
+for files in $HEX_SBE_files
+do
+    if  grep --quiet $files $EDEXLOGFILES; then
+        echo "move on" > /dev/null
+    else
+        ls -l $files
+        echo $INGS Ingest.ctdmo-ghqr_recovered $files GP03FLMB-xxxxx-03-CTDMOx000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $files GP03FLMB-xxxxx-03-CTDMOx000 recovered
+        sleep 3
+    fi
+done
 
 
 #########################################################################################################

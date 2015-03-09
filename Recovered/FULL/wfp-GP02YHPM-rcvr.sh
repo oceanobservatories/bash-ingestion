@@ -1,6 +1,6 @@
 #!/bin/bash
-#Ingest.ctdmo-ghqr_recovered          /omc_data/whoi/OMC/GP02HYPM/R00001/mc/SBE37*.hex         GP02HYPM-RIS01-01-CTDMOG000
-#Ingest.ctdmo-ghqr-sio_recovered      /omc_data/whoi/OMC/GP02HYPM/R00001/ctdmo/CTD*.DAT        GP02HYPM-RIS01-01-CTDMOG000
+#Ingest.ctdmo-ghqr_recovered          /omc_data/whoi/OMC/GP02HYPM/R00001/mc/SBE37*.hex         GP02HYPM-RIS01-xx-CTDMOx000
+#Ingest.ctdmo-ghqr-sio_recovered      /omc_data/whoi/OMC/GP02HYPM/R00001/ctdmo/CTD*.DAT        GP02HYPM-RIS01-xx-CTDMOx000
 #Ingest.sio-eng-sio_recovered         /omc_data/whoi/OMC/GP02HYPM/R00001/SIOC/status/STA*.DAT  GP02HYPM-GP001-00-ENG000000
 
 #Ingest.ctdpf-ckl-wfp_recovered       /omc_data/whoi/OMC/GP02HYPM/R00001/wfp_12936/C*.DAT      GP02HYPM-WFP02-04-CTDPFL000
@@ -29,17 +29,17 @@ date
 echo "starting wfp-GP02HYPM-rcvr.sh"
 
 #Files of the type:
-DAT_A_12936=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_12936/A*.DAT
-DAT_C_12936=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_12936/C*.DAT
-DAT_E_12936=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_12936/E*.DAT
+DAT_A_12936=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_*/A*.DAT
+DAT_C_12936=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_*/C*.DAT
+DAT_E_12936=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_*/E*.DAT
 
-DAT_A_12774=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_12774/A*.DAT
-DAT_C_12774=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_12774/C*.DAT
-DAT_E_12774=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_12774/E*.DAT
+DAT_A_12774=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_*/A*.DAT
+DAT_C_12774=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_*/C*.DAT
+DAT_E_12774=/omc_data/whoi/OMC/GP02HYPM/R00001/wfp_*/E*.DAT
 
-#DAT_CTD=/omc_data/whoi/OMC/GP02HYPM/R00001/ctdmo/CTD*.DAT          no files or even folder yet!!!!!!
+DAT_CTD=/omc_data/whoi/OMC/GP02HYPM/R00001/ctdmo/CTD*.DAT         
 DAT_STA=/omc_data/whoi/OMC/GP02HYPM/R00001/SIOC/status/STA*.DAT
-#HEX_SBE=/omc_data/whoi/OMC/GP02HYPM/R00001/mc/SBE37*.hex           no info about which folder to take!!!!!!!!!
+HEX_SBE=/omc_data/whoi/OMC/GP02HYPM/R00001/mc/raw/SBE37*.hex     
 
 #Pick up the files:
 DAT_A_12936_files=$(find $DAT_A_12936 -print)
@@ -50,9 +50,9 @@ DAT_A_12774_files=$(find $DAT_A_12774 -print)
 DAT_C_12774_files=$(find $DAT_C_12774 -print)
 DAT_E_12774_files=$(find $DAT_E_12774 -print)
 
-#DAT_CTD_files=$(find $DAT_CTD -print)
+DAT_CTD_files=$(find $DAT_CTD -print)
 DAT_STA_files=$(find $DAT_STA -print)
-#HEX_SBE_files=$(find $HEX_SBE -print)
+HEX_SBE_files=$(find $HEX_SBE -print)
 
 #Command generation:
 
@@ -157,18 +157,18 @@ done
 
 #*************************************************************************************************************************
 
-#Ingest.ctdmo-ghqr-sio_recovered      /omc_data/whoi/OMC/GP02HYPM/R00001/ctdmo/CTD*.DAT        GP02HYPM-RIS01-01-CTDMOG000
-#for files in $DAT_CTD_files
-#do
-#    if  grep --quiet $files $EDEXLOGFILES; then
-#        echo "move on" > /dev/null
-#    else
-#        ls -l $files
-#        echo $INGS Ingest.ctdmo-ghqr-sio_recovered $files GP02HYPM-RIS01-01-CTDMOG000 recovered
-#             $INGS Ingest.ctdmo-ghqr-sio_recovered $files GP02HYPM-RIS01-01-CTDMOG000 recovered
-#        sleep 3
-#    fi
-#done
+#Ingest.ctdmo-ghqr-sio_recovered      /omc_data/whoi/OMC/GP02HYPM/R00001/ctdmo/CTD*.DAT        GP02HYPM-RIS01-xx-CTDMOx000
+for files in $DAT_CTD_files
+do
+    if  grep --quiet $files $EDEXLOGFILES; then
+        echo "move on" > /dev/null
+    else
+        ls -l $files
+        echo $INGS Ingest.ctdmo-ghqr-sio_recovered $files GP02HYPM-RIS01-xx-CTDMOx000 recovered
+             $INGS Ingest.ctdmo-ghqr-sio_recovered $files GP02HYPM-RIS01-xx-CTDMOx000 recovered
+        sleep 3
+    fi
+done
 
 #Ingest.sio-eng-sio_recovered         /omc_data/whoi/OMC/GP02HYPM/R00001/SIOC/status/STA*.DAT  GP02HYPM-GP001-00-ENG000000
 for files in $DAT_STA_files
@@ -183,18 +183,18 @@ do
     fi
 done
 
-#Ingest.ctdmo-ghqr_recovered          /omc_data/whoi/OMC/GP02HYPM/R00001/mc/SBE37*.hex         GP02HYPM-RIS01-01-CTDMOG000
-#for files in $HEX_SBE_files
-#do
-#    if  grep --quiet $files $EDEXLOGFILES; then
-#        echo "move on" > /dev/null
-#    else
-#        ls -l $files
-#        echo $INGS Ingest.ctdmo-ghqr_recovered $files GP02HYPM-RIS01-01-CTDMOG000 recovered
-#             $INGS Ingest.ctdmo-ghqr_recovered $files GP02HYPM-RIS01-01-CTDMOG000 recovered
-#        sleep 3
-#    fi
-#done
+#Ingest.ctdmo-ghqr_recovered          /omc_data/whoi/OMC/GP02HYPM/R00001/mc/SBE37*.hex         GP02HYPM-RIS01-xx-CTDMOx000
+for files in $HEX_SBE_files
+do
+    if  grep --quiet $files $EDEXLOGFILES; then
+        echo "move on" > /dev/null
+    else
+        ls -l $files
+        echo $INGS Ingest.ctdmo-ghqr_recovered $files GP02HYPM-RIS01-xx-CTDMOx000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $files GP02HYPM-RIS01-xx-CTDMOx000 recovered
+        sleep 3
+    fi
+done
 
 date
 echo "ended GP02HYPM.sh"
