@@ -68,7 +68,7 @@ done
 
 #****************************************no info yet for ctd *******************************************
 # Ingest.ctdmo-ghqr-sio_telemetered      /omc_data/whoi/OMC/GP03FLMA/D00002/node*p1_*.ctdmo.dat     GP03FLMA-xxxxx-03-CTDMOx000
-for files in $DAT_DOS_files
+for files in $DAT_CTD_files
 do
     if  grep --quiet $files $EDEXLOGFILES; then
         echo "move on" > /dev/null
@@ -84,15 +84,15 @@ done
 #*******************************************************************************************************
 
 
-# Ingest.ctdmo-ghqr-sio_telemetered      /omc_data/whoi/OMC/GP03FLMA/D00002/node*p1_*.dosta.dat     GP03FLMA-RIS01-03-DOSTAD000
+# Ingest.dosta-abcdjm-sio_telemetered      /omc_data/whoi/OMC/GP03FLMA/D00002/node*p1_*.dosta.dat     GP03FLMA-RIS01-03-DOSTAD000
 for files in $DAT_DOS_files
 do
     if  grep --quiet $files $EDEXLOGFILES; then
         echo "move on" > /dev/null
     else
         ls -l $files
-        echo $INGS Ingest.ctdmo-ghqr-sio_telemetered $files GP03FLMA-RIS01-03-DOSTAD000 telemetered
-             $INGS Ingest.ctdmo-ghqr-sio_telemetered $files GP03FLMA-RIS01-03-DOSTAD000 telemetered
+        echo $INGS Ingest.dosta-abcdjm-sio_telemetered $files GP03FLMA-RIS01-03-DOSTAD000 telemetered
+             $INGS Ingest.dosta-abcdjm-sio_telemetered $files GP03FLMA-RIS01-03-DOSTAD000 telemetered
         sleep 3
     fi
 done
