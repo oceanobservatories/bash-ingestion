@@ -2,7 +2,7 @@ uframe_route,filename_mask,reference_designator,data_source
 Ingest.metbk-a-dcl_telemetered,/omc_data/whoi/OMC/GI01SUMO/D00001/cg_data/dcl11/metbk1/*.metbk*.log,GI01SUMO-SBD11-06-METBKA000
 Ingest.metbk-a-dcl_telemetered,/omc_data/whoi/OMC/GI01SUMO/D00001/cg_data/dcl12/metbk2/*.metbk*.log,GI01SUMO-SBD12-06-METBKA000
 Ingest.spkir-abj-dcl_telemetered,/omc_data/whoi/OMC/GI01SUMO/D00001/cg_data/dcl11/spkir1/*.spkir.log,GI01SUMO-SBD11-05-SPKIRB000
-Ingest.spkir-abj-dcl_telemetered,/omc_data/whoi/OMC/GI01SUMO/D00001/cg_data/dcl16/spkir2/*.spkir.log,GI01SUMO-RID16-08-SPKIRB000,
+Ingest.spkir-abj-dcl_telemetered,/omc_data/whoi/OMC/GI01SUMO/D00001/cg_data/dcl16/spkir2/*.spkir.log,GI01SUMO-RID16-08-SPKIRB000
 Ingest.nutnr-b-dcl-full_telemetered,/omc_data/whoi/OMC/GI01SUMO/D00001/cg_data/dcl11/nutnr1/*.nutnr.log,GI01SUMO-SBD11-08-NUTNRB000
 Ingest.nutnr-b-dcl-full_telemetered,/omc_data/whoi/OMC/GI01SUMO/D00001/cg_data/dcl16/nutnr2/*.nutnr.log,GI01SUMO-RID16-07-NUTNRB000
 Ingest.pco2a-a-dcl_telemetered,/omc_data/whoi/OMC/GI01SUMO/D00001/cg_data/dcl12/pco2a/*.pco2a.log,GI01SUMO-SBD12-04-PCO2AA000
