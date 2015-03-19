@@ -1,0 +1,12 @@
+uframe_route,filename_mask,reference_designator,data_source
+Ingest.mopak-o-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl11/mopak/*.mopak.log,CP01CNSM-SBD11-01-MOPAK0000,recovered
+Ingest.metbk-a-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/cg_data/dcl11/metbk1/*.metbk*.log,CP01CNSM-SBD11-06-METBKA000,recovered
+Ingest.metbk-a-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/cg_data/dcl12/metbk2/*.metbk*.log,CP01CNSM-SBD12-06-METBKA000,recovered
+Ingest.pco2a-a-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/cg_data/dcl12/pco2a/*.pco2a.log,CP01CNSM-SBD12-04-PCO2AA000,recovered
+Ingest.wavss-a-dcl-full_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/cg_data/dcl12/wavss/*.wavss.log,CP01CNSM-SBD12-05-WAVSSA000,recovered
+Ingest.velpt-ab_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/cg_data/dcl26/velpt1/velpt*.log,CP01CNSM-RID26-04-VELPTA000,recovered
+Ingest.optaa-dj-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl27/OPTAA_snACS-129/*.optaa*.log,CP01CNSM-MFD37-01-OPTAAD000,recovered
+Ingest.dosta-abcdjm-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl27/DOSTA_sn132/*dosta*.log,CP01CNSM-RID27-04-DOSTAD000,recovered
+Ingest.spkir-abj-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/cg_data/dcl27/spkir/*.spkir.log,CP01CNSM-RID27-08-SPKIRB000,recovered
+Ingest.adcpt-acfgm-dcl-pd8_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/cg_data/dcl35/adcpt/*.adcpt.log,CP01CNSM-MFD35-01-ADCPTF000,recovered
+Ingest.presf-abc-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/cg_data/dcl35/presf/*.presf.log,CP01CNSM-MFD35-02-PRESFB000,recovered
