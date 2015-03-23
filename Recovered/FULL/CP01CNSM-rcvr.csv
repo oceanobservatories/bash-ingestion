@@ -8,5 +8,6 @@ Ingest.flort-dj-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl27/FLORT_sn9
 Ingest.ctdbp-cdef-cp_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl27/CTDBP_sn16P-71174-7208/*SBE16plus*.hex,CP01CNSM-RID27-03-CTDBPC000,recovered
 Ingest.ctdbp-cdef-cp_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl37/CTDBP_sn16P-71879-7239/*SBE16plus*.hex,CP01CNSM-MFD37-03-CTDBPD000,recovered
 Ingest.dosta-abcdjm-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl27/DOSTA_sn131/*dosta*.log,CP01CNSM-RID27-04-DOSTAD000,recovered
+Ingest.dosta-abcdjm-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl37/DOSTA_sn132/*dosta*.log,CP01CNSM-MFD37-04-DOSTAD000,recovered
 Ingest.nutnr-b_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl26/NUTNR_sn240/*SCH*.DAT,CP01CNSM-RID27-07-NUTNRB000,recovered
 Ingest.pco2w-abc-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl35/PCO2W_snC-0069/SAMI*.txt,CP01CNSM-MFD35-05-PCO2WB000,recovered
