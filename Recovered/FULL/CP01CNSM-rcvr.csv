@@ -3,6 +3,7 @@ Ingest.velpt-ab_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl35/VELPT_snAQD-8
 Ingest.phsen-abcdef-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl26/PHSEN_snP0096/SAMI*.txt,CP01CNSM-RID26-06-PHSEND000,recovered
 Ingest.phsen-abcdef-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl35/PHSEN_snP0095/SAMI*.txt,CP01CNSM-MFD35-06-PHSEND000,recovered
 Ingest.optaa-dj-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl27/OPTAA_snACS-123/*.optaa*.log,CP01CNSM-RID27-01-OPTAAD000,recovered
+Ingest.optaa-dj-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl37/OPTAA_snACS-129/*.optaa*.log,CP01CNSM-MFD37-01-OPTAAD000,recovered
 Ingest.flort-dj-dcl_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl27/FLORT_sn994/*.flort.log,CP01CNSM-RID27-02-FLORTD000,recovered
 Ingest.ctdbp-cdef-cp_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl27/CTDBP_sn16P-71174-7208/*SBE16plus*.hex,CP01CNSM-RID27-03-CTDBPC000,recovered
 Ingest.ctdbp-cdef-cp_recovered,/omc_data/whoi/OMC/CP01CNSM/R00001/dcl37/CTDBP_sn16P-71879-7239/*SBE16plus*.hex,CP01CNSM-MFD37-03-CTDBPD000,recovered
