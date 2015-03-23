@@ -1,51 +1,51 @@
 #!/bin/bash
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/ce_311_*.mrg CE05MOAS-GL311-00-ENG000000
-# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/ce_311_*.mrg CE05MOAS-GL311-01-PARADM000
-# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/ce_311_*.mrg CE05MOAS-GL311-02-FLORTM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/ce_311_*.mrg CE05MOAS-GL311-04-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/ce_311_*.mrg CE05MOAS-GL311-05-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/cp_311_*.mrg CE05MOAS-GL311-00-ENG000000
+# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/cp_311_*.mrg CE05MOAS-GL311-01-PARADM000
+# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/cp_311_*.mrg CE05MOAS-GL311-02-FLORTM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/cp_311_*.mrg CE05MOAS-GL311-04-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/cp_311_*.mrg CE05MOAS-GL311-05-CTDGVM000
 
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/ce_312_*.mrg CE05MOAS-GL312-00-ENG000000
-# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/ce_312_*.mrg CE05MOAS-GL312-01-PARADM000
-# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/ce_312_*.mrg CE05MOAS-GL312-02-FLORTM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/ce_312_*.mrg CE05MOAS-GL312-04-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/ce_312_*.mrg CE05MOAS-GL312-05-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/cp_312_*.mrg CE05MOAS-GL312-00-ENG000000
+# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/cp_312_*.mrg CE05MOAS-GL312-01-PARADM000
+# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/cp_312_*.mrg CE05MOAS-GL312-02-FLORTM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/cp_312_*.mrg CE05MOAS-GL312-04-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/cp_312_*.mrg CE05MOAS-GL312-05-CTDGVM000
 
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/ce_319_*.mrg CE05MOAS-GL319-00-ENG000000
-# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/ce_319_*.mrg CE05MOAS-GL319-01-PARADM000
-# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/ce_319_*.mrg CE05MOAS-GL319-02-FLORTM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/ce_319_*.mrg CE05MOAS-GL319-04-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/ce_319_*.mrg CE05MOAS-GL319-05-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/cp_319_*.mrg CE05MOAS-GL319-00-ENG000000
+# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/cp_319_*.mrg CE05MOAS-GL319-01-PARADM000
+# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/cp_319_*.mrg CE05MOAS-GL319-02-FLORTM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/cp_319_*.mrg CE05MOAS-GL319-04-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/cp_319_*.mrg CE05MOAS-GL319-05-CTDGVM000
 
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/ce_320_*.mrg CE05MOAS-GL320-00-ENG000000
-# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/ce_320_*.mrg CE05MOAS-GL320-01-PARADM000
-# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/ce_320_*.mrg CE05MOAS-GL320-02-FLORTM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/ce_320_*.mrg CE05MOAS-GL320-04-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/ce_320_*.mrg CE05MOAS-GL320-05-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/cp_320_*.mrg CE05MOAS-GL320-00-ENG000000
+# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/cp_320_*.mrg CE05MOAS-GL320-01-PARADM000
+# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/cp_320_*.mrg CE05MOAS-GL320-02-FLORTM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/cp_320_*.mrg CE05MOAS-GL320-04-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/cp_320_*.mrg CE05MOAS-GL320-05-CTDGVM000
 
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/ce_381_*.mrg CE05MOAS-GL381-00-ENG000000
-# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/ce_381_*.mrg CE05MOAS-GL381-01-PARADM000
-# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/ce_381_*.mrg CE05MOAS-GL381-02-FLORTM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/ce_381_*.mrg CE05MOAS-GL381-04-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/ce_381_*.mrg CE05MOAS-GL381-05-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/cp_381_*.mrg CE05MOAS-GL381-00-ENG000000
+# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/cp_381_*.mrg CE05MOAS-GL381-01-PARADM000
+# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/cp_381_*.mrg CE05MOAS-GL381-02-FLORTM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/cp_381_*.mrg CE05MOAS-GL381-04-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/cp_381_*.mrg CE05MOAS-GL381-05-CTDGVM000
 
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/ce_382_*.mrg CE05MOAS-GL382-00-ENG000000
-# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/ce_382_*.mrg CE05MOAS-GL382-01-PARADM000
-# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/ce_382_*.mrg CE05MOAS-GL382-02-FLORTM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/ce_382_*.mrg CE05MOAS-GL382-04-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/ce_382_*.mrg CE05MOAS-GL382-05-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/cp_382_*.mrg CE05MOAS-GL382-00-ENG000000
+# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/cp_382_*.mrg CE05MOAS-GL382-01-PARADM000
+# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/cp_382_*.mrg CE05MOAS-GL382-02-FLORTM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/cp_382_*.mrg CE05MOAS-GL382-04-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/cp_382_*.mrg CE05MOAS-GL382-05-CTDGVM000
 
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/ce_383_*.mrg CE05MOAS-GL383-00-ENG000000
-# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/ce_383_*.mrg CE05MOAS-GL383-01-PARADM000
-# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/ce_383_*.mrg CE05MOAS-GL383-02-FLORTM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/ce_383_*.mrg CE05MOAS-GL383-04-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/ce_383_*.mrg CE05MOAS-GL383-05-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/cp_383_*.mrg CE05MOAS-GL383-00-ENG000000
+# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/cp_383_*.mrg CE05MOAS-GL383-01-PARADM000
+# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/cp_383_*.mrg CE05MOAS-GL383-02-FLORTM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/cp_383_*.mrg CE05MOAS-GL383-04-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/cp_383_*.mrg CE05MOAS-GL383-05-CTDGVM000
 
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/ce_386_*.mrg CE05MOAS-GL386-00-ENG000000
-# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/ce_386_*.mrg CE05MOAS-GL386-01-PARADM000
-# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/ce_386_*.mrg CE05MOAS-GL386-02-FLORTM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/ce_386_*.mrg CE05MOAS-GL386-04-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/ce_386_*.mrg CE05MOAS-GL386-05-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/cp_386_*.mrg CE05MOAS-GL386-00-ENG000000
+# Ingest.parad-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/cp_386_*.mrg CE05MOAS-GL386-01-PARADM000
+# Ingest.flort-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/cp_386_*.mrg CE05MOAS-GL386-02-FLORTM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/cp_386_*.mrg CE05MOAS-GL386-04-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/cp_386_*.mrg CE05MOAS-GL386-05-CTDGVM000
 
 INGS=/home/developer/uframes/ooi/bin/ingestsender
 INGESTLOG=/home/wdk/race/log/new-ingest-gp-glider-command.log
@@ -62,21 +62,21 @@ date
 #echo "starting ingest-ce-glider.sh"
 echo "starting full-ingest-ce-glider.sh"
 
-GL311=/omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/ce_311_*.mrg
+GL311=/omc_data/whoi/OMC/CE05MOAS-GL311/D00001/merged-from-glider/cp_311_*.mrg
 #
-GL312=/omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/ce_312_*.mrg
+GL312=/omc_data/whoi/OMC/CE05MOAS-GL312/D00001/merged-from-glider/cp_312_*.mrg
 #
-GL319=/omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/ce_319_*.mrg
+GL319=/omc_data/whoi/OMC/CE05MOAS-GL319/D00001/merged-from-glider/cp_319_*.mrg
 #
-GL320=/omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/ce_320_*.mrg
+GL320=/omc_data/whoi/OMC/CE05MOAS-GL320/D00001/merged-from-glider/cp_320_*.mrg
 #
-GL381=/omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/ce_381_*.mrg
+GL381=/omc_data/whoi/OMC/CE05MOAS-GL381/D00001/merged-from-glider/cp_381_*.mrg
 #
-GL382=/omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/ce_382_*.mrg
+GL382=/omc_data/whoi/OMC/CE05MOAS-GL382/D00001/merged-from-glider/cp_382_*.mrg
 #
-GL383=/omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/ce_383_*.mrg
+GL383=/omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/cp_383_*.mrg
 #
-GL386=/omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/ce_386_*.mrg
+GL386=/omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/cp_386_*.mrg
 #
 
 GL311_files=$(find $GL311  -print)

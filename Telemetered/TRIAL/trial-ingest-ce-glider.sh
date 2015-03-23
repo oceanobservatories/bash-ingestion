@@ -79,21 +79,21 @@ GL383=/omc_data/whoi/OMC/CE05MOAS-GL383/D00001/merged-from-glider/ce_383_*.mrg
 GL386=/omc_data/whoi/OMC/CE05MOAS-GL386/D00001/merged-from-glider/ce_386_*.mrg
 #
 
-GL311_files=$(find $GL311  -print)
+GL311_files=$(ls $GL311 |head -250)
 #
-GL312_files=$(find $GL312  -print)
+GL312_files=$(ls $GL312 |head -250)
 #
-GL319_files=$(find $GL319  -print)
+GL319_files=$(ls $GL319 |head -250)
 #
-GL320_files=$(find $GL320  -print)
+GL320_files=$(ls $GL320 |head -250)
 #
-GL381_files=$(find $GL381  -print)
+GL381_files=$(ls $GL381 |head -250)
 #
-GL382_files=$(find $GL382  -print)
+GL382_files=$(ls $GL382 |head -250)
 #
-GL383_files=$(find $GL383  -print)
+GL383_files=$(ls $GL383 |head -250)
 #
-GL386_files=$(find $GL386  -print)
+GL386_files=$(ls $GL386 |head -250)
 #
 
 #define UFrame Route:

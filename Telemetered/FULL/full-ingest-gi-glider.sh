@@ -34,18 +34,18 @@ date >> $INGESTLOGT
 echo "starting new-ingest-gi-glider.sh" >> $INGESTLOGT
 
 #
-GL1D2=/omc_data/whoi/OMC/GI05MOAS-GL001/D00001/merged-from-glider/gi_469_*.mrg
+#GL1D2=/omc_data/whoi/OMC/GI05MOAS-GL001/D00001/merged-from-glider/gi_469_*.mrg  #supposed, but no data this time;
 #
 GL2D2=/omc_data/whoi/OMC/GI05MOAS-GL002/D00001/merged-from-glider/gi_477_*.mrg
 #
-GL3D2=/omc_data/whoi/OMC/GI05MOAS-GL003/D00001/merged-from-glider/gi_478_*.mrg
+#GL3D2=/omc_data/whoi/OMC/GI05MOAS-GL003/D00001/merged-from-glider/gi_478_*.mrg  #supposed, but no data this time;
 #
 
-GL1D2_files=$(find $GL1D2  -print)
+#GL1D2_files=$(find $GL1D2  -print)
 
 GL2D2_files=$(find $GL2D2  -print)
 #
-GL3D2_files=$(find $GL3D2  -print)
+#GL3D2_files=$(find $GL3D2  -print)
 
 
 #define UFrame Route:
@@ -61,22 +61,22 @@ declare -x GL1REFDES=(GI05MOAS-GL001-00-ENG000000
                       GI05MOAS-GL001-04-CTDGVM000) 
                 
 # telemetered
-for g1d2 in $GL1D2_files
-do
-    if  grep --quiet $g1d2 $EDEXLOGFILES; then
-        echo "move on" > /dev/null
-    else
-        ls -l $g1d2
-        for i in {0..3}
-        do
-#            echo "$INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} telemetered" >> $INGESTLOGT
-            echo "$INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} telemetered"
-                  $INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} telemetered
-        done
-        sleep 3 
-    fi
-    
-done
+#for g1d2 in $GL1D2_files
+#do
+#    if  grep --quiet $g1d2 $EDEXLOGFILES; then
+#        echo "move on" > /dev/null
+#    else
+#        ls -l $g1d2
+#        for i in {0..3}
+#        do
+##            echo "$INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} telemetered" >> $INGESTLOGT
+#            echo "$INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} telemetered"
+#                  $INGS ${UFR[i]} $g1d2 ${GL1REFDES[i]} telemetered
+#        done
+#        sleep 3 
+#    fi
+#    
+#done
     # echo $INGS Ingest.glider-eng-glider_telemetered $g1d2 CP05MOAS-GL001-00-ENG000000 telemetered
     # echo $INGS Ingest.parad-m-glider_telemetered $g1d2 CP05MOAS-GL001-05-PARADM000 telemetered
     # echo $INGS Ingest.flort-m-glider_telemetered $g1d2 CP05MOAS-GL001-02-FLORTM000 telemetered
@@ -116,22 +116,22 @@ declare -x GL3REFDES=(GI05MOAS-GL003-00-ENG000000
                       GI05MOAS-GL003-02-DOSTAM000 
                       GI05MOAS-GL003-04-CTDGVM000) 
 
-for g3d2 in $GL3D2_files
-do
-    if  grep --quiet $g3d2 $EDEXLOGFILES; then
-        echo "move on" > /dev/null
-    else
-        ls -l $g3d2
-        for i in {0..3}
-        do
-#            echo "$INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} telemetered" >> $INGESTLOGT
-            echo "$INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} telemetered" 
-                  $INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} telemetered
-        done
-        sleep 3 
-    fi
-    
-done
+#for g3d2 in $GL3D2_files
+#do
+#    if  grep --quiet $g3d2 $EDEXLOGFILES; then
+#        echo "move on" > /dev/null
+#    else
+#        ls -l $g3d2
+#        for i in {0..3}
+#        do
+##            echo "$INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} telemetered" >> $INGESTLOGT
+#            echo "$INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} telemetered" 
+#                  $INGS ${UFR[i]} $g3d2 ${GL3REFDES[i]} telemetered
+#        done
+#        sleep 3 
+#    fi
+#    
+#done
     # echo $INGS Ingest.glider-eng-glider_telemetered $g3d2 CP05MOAS-GL003-00-ENG000000 telemetered
     # echo $INGS Ingest.parad-m-glider_telemetered $g3d2 CP05MOAS-GL003-05-PARADM000 telemetered
     # echo $INGS Ingest.flort-m-glider_telemetered $g3d2 CP05MOAS-GL003-02-FLORTM000 telemetered

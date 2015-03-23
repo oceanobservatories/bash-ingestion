@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 #Ingest.adcps-jln_recovered         /omc_data/whoi/OMC/GP03FLMB/R00001/adcp/*.000          GP03FLMB-RIS02-01-ADCPSL000
 
 #Ingest.ctdmo-ghqr_recovered        /omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37*.hex       GP03FLMB-RIS02-03-CTDMOG000
@@ -35,7 +35,7 @@
 
 #Ingest.sio-eng-sio_recovered       /omc_data/whoi/OMC/GP03FLMB/R00001/*_SIOC/status/STA*.DAT  GP03FLMB-FM001-00-ENG000000
 
-NGS=/home/developer/uframes/ooi/bin/ingestsender
+INGS=/home/developer/uframes/ooi/bin/ingestsender
 INGESTLOG=/home/wdk/race/log/wfp-CP02PMCO-rcvr-command.log
 INGESTLOGT=/home/wdk/race/log/wfp-CP02PMCO-rcvr-command.log-T
 EDEXSRV=/home/developer/uframes/ooi/bin/edex-server
@@ -50,7 +50,18 @@ echo "starting wfp-GP03FLMB-rcvr.sh"
 #Files of the type:
 ADCP_000=/omc_data/whoi/OMC/GP03FLMB/R00001/adcp/*.000
 
-HEX_SBE=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37*.hex
+HEX_SBE03=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710255_*.hex
+HEX_SBE04=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710221_*.hex
+HEX_SBE05=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710216_*.hex
+HEX_SBE06=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710217_*.hex
+HEX_SBE07=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710222_*.hex
+HEX_SBE08=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710263_*.hex
+HEX_SBE09=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710258_*.hex
+HEX_SBE10=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710259_*.hex
+HEX_SBE11=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710253_*.hex
+HEX_SBE12=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710266_*.hex
+HEX_SBE13=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710265_*.hex
+HEX_SBE14=/omc_data/whoi/OMC/GP03FLMB/R00001/mc/SBE37-IM_03710264_*.hex
 DAT_CTD=/omc_data/whoi/OMC/GP03FLMB/R00001/ctdmo/CTD*.DAT
 
 DAT_DOS=/omc_data/whoi/OMC/GP03FLMB/R00001/dosta/DOS*.DAT
@@ -60,17 +71,126 @@ TXT_SAM=/omc_data/whoi/OMC/GP03FLMB/R00001/SAMI/sami*.txt
 
 
 #Pick up the files:
-ADCP_000_files=$(find $ADCP_000 -print)
+ADCP_000_files=$(find $ADCP_000 -print | head -250)
 
-HEX_SBE_files=$(find $HEX_SBE -print)
-DAT_CTD_files=$(find $DAT_CTD -print)
+HEX_SBE_files=$(find $HEX_SBE -print | head -250)
+DAT_CTD_files=$(find $DAT_CTD -print | head -250)
 
-DAT_DOS_files=$(find $DAT_DOS -print)
-DAT_FLO_files=$(find $DAT_FLO -print)
-DAT_STA_files=$(find $DAT_STA -print)
-TXT_SAM_files=$(find $TXT_SAM -print)
+DAT_DOS_files=$(find $DAT_DOS -print | head -250)
+DAT_FLO_files=$(find $DAT_FLO -print | head -250)
+DAT_STA_files=$(find $DAT_STA -print | head -250)
+TXT_SAM_files=$(find $TXT_SAM -print | head -250)
 
 #Command generation:
+# CTDMO(G/H)
+
+if  grep --quiet $HEX_SBE03 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE03
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE03 GP03FLMB-RIS02-03-CTDMOG000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE03 GP03FLMB-RIS02-03-CTDMOG000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE04 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE04
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE04 GP03FLMB-RIS02-04-CTDMOG000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE04 GP03FLMB-RIS02-04-CTDMOG000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE05 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE05
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE05 GP03FLMB-RIS02-05-CTDMOG000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE05 GP03FLMB-RIS02-05-CTDMOG000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE06 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE06
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE06 GP03FLMB-RIS02-06-CTDMOG000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE06 GP03FLMB-RIS02-06-CTDMOG000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE07 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE07
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE07 GP03FLMB-RIS02-07-CTDMOG000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE07 GP03FLMB-RIS02-07-CTDMOG000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE08 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE08
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE08 GP03FLMB-RIS02-08-CTDMOG000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE08 GP03FLMB-RIS02-08-CTDMOG000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE09 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE09
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE09 GP03FLMB-RIS02-09-CTDMOG000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE09 GP03FLMB-RIS02-09-CTDMOG000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE10 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE10
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE10 GP03FLMB-RIS02-10-CTDMOG000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE10 GP03FLMB-RIS02-10-CTDMOG000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE11 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE11
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE11 GP03FLMB-RIS02-11-CTDMOG000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE11 GP03FLMB-RIS02-11-CTDMOG000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE12 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE12
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE12 GP03FLMB-RIS02-12-CTDMOH000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE12 GP03FLMB-RIS02-12-CTDMOH000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE13 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE13
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE13 GP03FLMB-RIS02-13-CTDMOH000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE13 GP03FLMB-RIS02-13-CTDMOH000 recovered
+        sleep 3
+fi
+
+if  grep --quiet $HEX_SBE14 $EDEXLOGFILES; then
+         echo "move on" > /dev/null
+else
+        ls -l $HEX_SBE14
+        echo $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE14 GP03FLMB-RIS02-14-CTDMOH000 recovered
+             $INGS Ingest.ctdmo-ghqr_recovered $HEX_SBE14 GP03FLMB-RIS02-14-CTDMOH000 recovered
+        sleep 3
+fi
 
 #Ingest.adcps-jln_recovered         /omc_data/whoi/OMC/GP03FLMB/R00001/adcp/*.000          GP03FLMB-RIS02-01-ADCPSL000
 for files in $ADCP_000_files
@@ -86,26 +206,7 @@ do
 done
 
 ################################################  unknown  ##############################################
-#Ingest.ctdmo-ghqr_recovered        /omc_data/whoi/OMC/GP03FLMA/R00001/mc/SBE37*.hex       GP03FLMA-xxxxx-03-CTDMOx000
-for files in $HEX_SBE_files
-do
-    if  grep --quiet $files $EDEXLOGFILES; then
-        echo "move on" > /dev/null
-    else
-        ls -l $files
-        echo $INGS Ingest.ctdmo-ghqr_recovered $files GP03FLMB-xxxxx-03-CTDMOx000 recovered
-             $INGS Ingest.ctdmo-ghqr_recovered $files GP03FLMB-xxxxx-03-CTDMOx000 recovered
-        sleep 3
-    fi
-done
-
-
 #########################################################################################################
-
-
-
-
-
 
 #Ingest.dosta-abcdjm-sio_recovered  /omc_data/whoi/OMC/GP03FLMB/R00001/dosta/DOS*.DAT      GP03FLMB-RIS01-03-DOSTAD000
 for files in $DAT_DOS_files
@@ -161,18 +262,3 @@ done
 
 date
 echo "ended GP03FLMB.sh"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

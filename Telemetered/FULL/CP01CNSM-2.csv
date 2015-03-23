@@ -1,0 +1,10 @@
+uframe_route,filename_mask,reference_designator,data_source
+Ingest.mopak-o-dcl_telemetered         /omc_data/whoi/OMC/CP01CNSM/D00002/dcl11/mopak/*.mopak.log                CP01CNSM-SBD11-01-MOPAK0000   telemetered
+Ingest.optaa-dj-dcl_telemetered        /omc_data/whoi/OMC/CP01CNSM/D00002/dcl27/optaa1/*.optaa*.log              CP01CNSM-RID27-01-OPTAAD000   telemetered
+Ingest.optaa-dj-dcl_telemetered        /omc_data/whoi/OMC/CP01CNSM/D00002/dcl37/optaa2/*.optaa*.log              CP01CNSM-MFD37-01-OPTAAD000   telemetered
+Ingest.flort-dj-dcl_telemetered        /omc_data/whoi/OMC/CP01CNSM/D00002/dcl27/flort/*.flort.log                CP01CNSM-RID27-02-FLORTD000   telemetered
+Ingest.nutnr-b-dcl-full_telemetered    /omc_data/whoi/OMC/CP01CNSM/D00002/dcl27/nutnr/*.nutnr.log                CP01CNSM-RID27-07-NUTNRB000   telemetered
+Ingest.spkir-abj-dcl_telemetered       /omc_data/whoi/OMC/CP01CNSM/D00002/cg_data/dcl27/spkir/*.spkir.log        CP01CNSM-RID27-08-SPKIRB000   telemetered
+Ingest.adcpt-acfgm-dcl-pd8_telemetered /omc_data/whoi/OMC/CP01CNSM/D00002/cg_data/dcl35/adcpt/*.adcpt.log        CP01CNSM-MFD35-01-ADCPTF000   telemetered
+Ingest.pco2w-abc-dcl_telemetered       /omc_data/whoi/OMC/CP01CNSM/D00002/dcl35/pco2w/*.pco2w.log                CP01CNSM-MFD35-05-PCO2WB000   telemetered
+

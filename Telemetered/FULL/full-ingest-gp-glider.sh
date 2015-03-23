@@ -1,19 +1,19 @@
 #!/bin/bash
 
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/cp_276_*.mrg GP05MOAS-GL001-00-ENG000000
-# Ingest.flord-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/cp_276_*.mrg GP05MOAS -GL001-01-FLORDM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/cp_276_*.mrg GP05MOAS-GL001-02-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/cp_276_*.mrg GP05MOAS-GL001-04-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/gp_276_*.mrg GP05MOAS-GL001-00-ENG000000
+# Ingest.flord-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/gp_276_*.mrg GP05MOAS -GL001-01-FLORDM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/gp_276_*.mrg GP05MOAS-GL001-02-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/gp_276_*.mrg GP05MOAS-GL001-04-CTDGVM000
 #
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/cp_362_*.mrg GP05MOAS-GL002-00-ENG000000
-# Ingest.flord-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/cp_362_*.mrg GP05MOAS-GL002-01-FLORDM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/cp_362_*.mrg GP05MOAS-GL002-02-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/cp_362_*.mrg GP05MOAS-GL002-04-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/gp_362_*.mrg GP05MOAS-GL002-00-ENG000000
+# Ingest.flord-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/gp_362_*.mrg GP05MOAS-GL002-01-FLORDM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/gp_362_*.mrg GP05MOAS-GL002-02-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/gp_362_*.mrg GP05MOAS-GL002-04-CTDGVM000
 #
-# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/GP05MOAS-GL003/D00003/merged-from-glider/cp_453_*.mrg GP05MOAS-GL003-00-ENG000000
-# Ingest.flord-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL003/D00003/merged-from-glider/cp_453_*.mrg GP05MOAS-GL003-01-FLORDM000
-# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/GP05MOAS-GL003/D00003/merged-from-glider/cp_453_*.mrg GP05MOAS-GL003-02-DOSTAM000
-# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL003/D00003/merged-from-glider/cp_453_*.mrg GP05MOAS-GL003-04-CTDGVM000
+# Ingest.glider-eng-glider_telemetered   /omc_data/whoi/OMC/GP05MOAS-GL003/D00003/merged-from-glider/gp_453_*.mrg GP05MOAS-GL003-00-ENG000000
+# Ingest.flord-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL003/D00003/merged-from-glider/gp_453_*.mrg GP05MOAS-GL003-01-FLORDM000
+# Ingest.dosta-abcdjm-glider_telemetered /omc_data/whoi/OMC/GP05MOAS-GL003/D00003/merged-from-glider/gp_453_*.mrg GP05MOAS-GL003-02-DOSTAM000
+# Ingest.ctdgv-m-glider_telemetered      /omc_data/whoi/OMC/GP05MOAS-GL003/D00003/merged-from-glider/gp_453_*.mrg GP05MOAS-GL003-04-CTDGVM000
 
 
 INGS=/home/developer/uframes/ooi/bin/ingestsender
@@ -32,11 +32,11 @@ date
 echo "starting full-ingest-gp-glider.sh"
 
 #
-GL1D2=/omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/gp_276_*.mrg
+GL1D2=/omc_data/whoi/OMC/GP05MOAS-GL001/D00002/merged-from-glider/gp*.mrg
 #
-GL2D2=/omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/gp_362_*.mrg
+GL2D2=/omc_data/whoi/OMC/GP05MOAS-GL002/D00002/merged-from-glider/gp*.mrg
 #
-GL3D3=/omc_data/whoi/OMC/GP05MOAS-GL003/D00002/merged-from-glider/gp_453_*.mrg #previous dirctory is D000003!!!then changed to D000001, then D0000002
+GL3D3=/omc_data/whoi/OMC/GP05MOAS-GL003/D00001/merged-from-glider/unit*.mrg #previous dirctory is D000003!!!then changed to D000001, then D0000002
 #
 
 GL1D2_files=$(find $GL1D2  -print)
